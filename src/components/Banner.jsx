@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-
+import bannerimg from "../assets/pngwing1.jpg"
 
 
 const Banner = () => {
     return (
         <div>
-            <div className="hero min-h-screen bg-[#F3F3F3]">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src="../assets/pngwing 1.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+            <div className="hero min-h-screen bg-gray-200 max-w-7xl m-auto">
+  <div className="hero-content rounded-lx flex-col lg:flex-row-reverse justify-between">
+    <img src={bannerimg} className="max-w-sm rounded-lg shadow-2xl" />
     <div>
       <h1 className="text-5xl font-bold">Books to freshen up <br /> your bookshelf</h1>
       <Link

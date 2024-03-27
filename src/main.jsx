@@ -12,7 +12,8 @@ import ListedBooks from "./pages/ListedBooks";
 import PageToRead from "./pages/PageToRead";
 import Statistics from "./pages/Statistics";
 import Blogs from "./pages/Blogs";
-
+import BookDetails from "./pages/BookDetails";
+import  { Toaster } from 'react-hot-toast';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>,
         loader: ()=>fetch('books.json')
+      },
+      {
+        path: '/:id',
+        element:<BookDetails></BookDetails>,
+        loader:() => fetch(`books.json`)
       },
       {
         path: '/listed books',
@@ -47,5 +53,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Toaster></Toaster>
   </React.StrictMode>
 );

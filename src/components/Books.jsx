@@ -10,7 +10,7 @@ const Books = () => {
            <section className=" text-gray-100">
 	<div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
 		
-		<div className="grid bg-gray-400 justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {/* <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900">
 				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">

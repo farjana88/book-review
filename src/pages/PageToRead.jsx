@@ -1,9 +1,13 @@
 
 
+
+
+
+
 const PageToRead = () => {
     return (
         <div>
-        <h3>this is page to reed</h3>
+    <h2>this is page to read</h2>
         </div>
     );
 };
