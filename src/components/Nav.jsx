@@ -10,7 +10,7 @@ const Nav = () => {
     <li><NavLink to="/blogs">Blogs</NavLink></li>
     </> 
     return (
-         <div className="navbar bg-base-100 px-8 fixed z-10 shadow-lg">
+         <div className="navbar bg-base-100 px-8  shadow-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

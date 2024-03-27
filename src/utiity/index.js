@@ -8,14 +8,14 @@ export const getBooks = ()=> {
     return books
 }
 
-export const savedBook = (book)=> {
+export const savedBook = (id)=> {
     let books = getBooks()
-    const isExist = books.find(b=> b.id===book.id)
+    const isExist = books.find(b=> b.id===id)
     if(isExist){
 return toast.error('Already Exist')
     }
     {
-        books.push(book)
+        books.push(id)
         localStorage.setItem('books', JSON.stringify(books))
         toast.success('Add Successfully')
     }

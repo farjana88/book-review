@@ -1,13 +1,11 @@
+import { useLoaderData } from "react-router-dom";
 
 
 const ListedBooks = () => {
+    const books = useLoaderData()
     return (
 		<div >
-            {/* className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" */}
-        
-           {/* {
-                books.map(book=> (<Book key = { book.id} book={book}></Book>))
-            } */}
+           
         </div>
     );
 };
