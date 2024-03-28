@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// import { savedBook } from "../utiity";
 
 const BookDetails = () => {
     const books = useLoaderData()
@@ -9,7 +10,7 @@ const BookDetails = () => {
     const{image,bookName, author, category,review, tags, totalpages,yearOfPublishing, rating}=bookDetails
 
     const handleListedBook= ()=> {
-        
+      // savedBook(book)
         toast.success('Add Successfully')
         
     }
